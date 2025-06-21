@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gamboc Construcciones</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primario: #000000;
+      --secundario: #ffcc00;
+      --claro: #fff8dc;
+      --blanco: #ffffff;
+      --gris: #f8f9fa;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Rubik', sans-serif;
+      background-color: var(--gris);
+      color: var(--primario);
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(to right, var(--primario), #333);
+      color: var(--secundario);
+      padding: 1.5rem;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    header h1 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+    nav a {
+      color: var(--secundario);
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    section {
+      padding: 3rem 1.5rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      color: var(--primario);
+      margin-bottom: 1rem;
+      font-size: 1.8rem;
+      border-left: 5px solid var(--secundario);
+      padding-left: 1rem;
+    }
+    .galeria {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1rem;
+    }
+    .galeria img {
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Gamboc Construcciones</h1>
+    <nav>
+      <a href="#galeria">Galería</a>
+    </nav>
+  </header>
+
+  <section id="galeria">
+    <h2>Galería</h2>
+    <div class="galeria">
+      <img src="imagenes/imagen_1_1.jpeg" alt="Instalación de tablaroca">
+      <img src="imagenes/imagen_1_3.png" alt="Acabado de muros">
+      <img src="imagenes/imagen_2_5.jpeg" alt="Piso y azulejo en cocina">
+      <img src="imagenes/imagen_3_3.jpeg" alt="Drenaje y fontanería">
+      <img src="imagenes/imagen_4_1.jpeg" alt="Colocación de estufa eléctrica">
+      <img src="imagenes/imagen_5_4.jpeg" alt="Loza de concreto con tubería de luz">
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Gamboc Construcciones. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
